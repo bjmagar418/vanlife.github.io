@@ -216,3 +216,68 @@ footer {
     width: 30%;
   }
 }
+/*vanpage*/
+.van-list-container{
+  padding: 23px;
+}
+.van-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 34px;
+  margin-top:54px;
+}
+.van-tile h3{
+  color: black;
+  text-decoration: none;
+}
+.van-tile img {
+   width: 100%;
+   border-radius: 5px;
+}
+.van-type{
+  text-decoration: none;
+  font-size: bold;
+  font-weight: 500;
+  font-style: normal;
+  padding: 6px 26px;
+  background-color: #FFEAD0;
+  border-radius: 5px;
+  color: #4d4d4d;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-type:hover{
+  color: blanchedalmond;
+  cursor: pointer;
+}
+.van-type:focus {
+  outline: none;
+}
+.van-type.selected {
+  color: #FFEAD0;
+}
+.van-type.simple:hover, .van-type.simple.selected {
+  background-color: #E17654;
+}
+.van-type.rugged:hover, .van-type.rugged.selected {
+  background-color: #115E59;
+}
+.van-type.luxury:hover, .van-type.luxury.selected {
+  background-color: #161616;
+}
+.van-type.clear-filters {
+  margin-left: -20px;
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #4D4D4D;
+}
+i[class*='van-type-'] {
+  padding: 7px 14px;
+}

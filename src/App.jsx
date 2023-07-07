@@ -5,6 +5,8 @@ import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
 import './App.css';
 import Footer from "./Footer.jsx";
+import './server.js'
+import Vans from "./Pages/Vans.jsx";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
   <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
+    <Route path='/vans' element={<Vans/>}/>
+
   </Routes>
    <Footer/>
     </BrowserRouter>
